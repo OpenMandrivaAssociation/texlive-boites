@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-boites
 Version:	20090512
-Release:	1
+Release:	2
 Summary:	Boxes that may break across pages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/boites
