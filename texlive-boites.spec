@@ -7,7 +7,7 @@
 Name:		texlive-boites
 Epoch:		1
 Version:	1.1
-Release:	4
+Release:	5
 Summary:	Boxes that may break across pages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/boites
