@@ -1,20 +1,14 @@
-# revision 32235
-# category Package
-# catalog-ctan /macros/latex/contrib/boites
-# catalog-date 2013-11-23 08:21:35 +0100
-# catalog-license gpl
-# catalog-version 1.1
 Name:		texlive-boites
 Epoch:		1
-Version:	1.1
-Release:	10
+Version:	32235
+Release:	1
 Summary:	Boxes that may break across pages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/boites
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/boites.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/boites.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/boites.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/boites.r32235.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/boites.doc.r32235.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/boites.source.r32235.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ whose edges may be variously fancy. The bundle includes a few
 examples (shaded box, box with a wavy line on its side, etc).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -49,7 +43,8 @@ examples (shaded box, box with a wavy line on its side, etc).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
