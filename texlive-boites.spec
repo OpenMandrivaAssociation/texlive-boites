@@ -4,7 +4,7 @@ Version:	32235
 Release:	2
 Summary:	Boxes that may break across pages
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/boites
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/boites
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/boites.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/boites.doc.r%{version}.tar.xz
